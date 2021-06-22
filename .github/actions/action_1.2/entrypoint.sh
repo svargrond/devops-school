@@ -1,5 +1,8 @@
 #!/bin/sh -l
 
+echo $user_value
+echo $INPUTS_user_value
+
 echo "EXECUTING PYTHON SCRIPT..."
 python3 /main.py
 
