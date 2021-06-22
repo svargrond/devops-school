@@ -7,9 +7,12 @@ on:
                 description: 'Insert your parameter'
                 required: true
                 default: 'Some_default_value'
+env:
+    USER_VALUE: ${{ github.event.inputs.user_value }}
+
 jobs:
 
-    TIMESTAMP:
+    GIT-HOMEWORK:
         runs-on: ubuntu-latest
 
         steps:
