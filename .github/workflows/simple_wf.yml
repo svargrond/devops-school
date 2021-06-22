@@ -2,7 +2,11 @@ name: Simple Workflow
 
 on:
     workflow_dispatch:
-
+        inputs:
+            user_value:
+                description: 'Insert your value'
+                required: true
+                default: 'Some_default_value'
 jobs:
 
     TIMESTAMP:
