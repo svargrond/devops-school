@@ -17,6 +17,7 @@ jobs:
         - name: 1.1 INPUT PARAMETER TO TXT FILE
           run: echo "${{ github.event.inputs.user_value }}" > parameter.txt
         - name: 1.2 DOWNLOAD ARTIFACT
+          uses: actions/upload-artifact@v2
           with:
               name: parameter.txt
               path: /home/runner/work/devops-school/devops-school/parameter.txt
