@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-echo "${{ github.event.inputs.user_value }}"
+echo "$inputs.user_value"
 
 echo "EXECUTING PYTHON SCRIPT..."
 python3 /main.py
