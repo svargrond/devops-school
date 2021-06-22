@@ -4,4 +4,4 @@ runs:
     using: 'docker'
     image: 'Dockerfile'
     args:
-        - ${{ inputs.user_value }}
+        - ${{ github.event.inputs.user_value }}
