@@ -18,8 +18,6 @@ jobs:
           run: |
             cp ./scripts/main.py ./.github/actions/action_1.2/main.py
         - name: 1.2 EXECUTING THE PYTHON SCRIPT
-          env:
-              USER_VALUE: ${{ github.event.inputs.user_value }}"
           uses: ./.github/actions/action_1.2
         - name: 1.3 DOWNLOAD ARTIFACT
           uses: actions/upload-artifact@v2
